@@ -1,2 +1,0 @@
-
-print("Radost vo mne :)")
