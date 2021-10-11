@@ -41,10 +41,10 @@ castice_porovnani = castice_rozsirene.groupby(["type_of_day"])["pm25"].mean()
 castice_porovnani = pd.DataFrame(castice_porovnani)
 castice_porovnani = castice_porovnani.reset_index()
 print(castice_rozsirene.head())
-print("Porovnání průměrného množství jemných částic ve všední dny a o víkendu: \n", castice_porovnani.to_string(index=False))
+print("Porovnání pruměrného množství jemných částic ve všední dny a o víkendu: \n", castice_porovnani.to_string(index=False))
 
 # Porovnání průměrného množství jemných částic ve všední dny a o víkendu pomocí grafu.
 castice_porovnani.plot.bar(x="type_of_day", y="pm25", legend=None)
-plt.title("Porovnání průměrného množství jemných částic ve všední dny a o víkendu", fontsize=12, pad=15)
+plt.title("Porovnání pruměrného množství jemných částic ve všední dny a o víkendu", fontsize=12, pad=15)
 # plt.legend(["pruměrné množství jemných částic"], loc='upper center', bbox_to_anchor=(0.5, 1.06), ncol=3, fancybox=True, shadow=True)
 plt.show()
