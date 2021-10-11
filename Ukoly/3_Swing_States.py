@@ -60,7 +60,7 @@ print("Přehled swing states amerických prezidenstkých voleb: \n", elections_s
 # Seřaď tabulku podle velikosti margin (absolutním i relativním) a zjisti, kde byl výsledek voleb nejtěsnější.
 
 #############################################################################################################
-# Nejemnsi rozdil v hlasovani na urovni statu
+# Nejmensi rozdil v hlasovani na urovni statu
 #############################################################################################################
 elections_margin = pd.read_csv("1976-2020-president.csv")
 elections_margin = elections_margin.dropna(subset=["candidate"]).reset_index(drop=True)
@@ -80,7 +80,7 @@ elections_margin["candidate_name_converted"] = elections_margin["candidate_name_
 print(elections_margin.head().to_string())
 
 #############################################################################################################
-# Nejemnsi rozdil celkove mezi kandidaty v jednotlivych volbach
+# Nejmensi rozdil celkove mezi kandidaty v jednotlivych volbach
 #############################################################################################################
 elections_margin_grouped = pd.read_csv("1976-2020-president.csv")
 elections_margin_grouped = elections_margin_grouped.dropna(subset=["candidate"]).reset_index(drop=True)
