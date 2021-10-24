@@ -46,4 +46,3 @@ lexikon_zvirat["url"] = lexikon_zvirat.apply(check_url, axis=1)
 lexikon_zvirat_filtered = lexikon_zvirat[["title", "image_src", "url"]]
 print(lexikon_zvirat_filtered.head(n=70).to_string())
 
-
