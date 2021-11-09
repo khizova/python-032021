@@ -112,4 +112,3 @@ ax.plot(btc_june["Date"], btc_june["Close"])
 plt.show()
 
 print("Lineární závislot/nezávislost je možné vyčíst i z grafu vývoje zavírací ceny za kratší období.")
-
