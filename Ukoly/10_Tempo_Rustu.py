@@ -24,5 +24,3 @@ xmr_mean = statistics.geometric_mean(xmr_list) - 1
 print(f"Průměrný mezidenní růst ceny XMR je", xmr_mean)
 
 
-
-
