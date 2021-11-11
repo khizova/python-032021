@@ -1,5 +1,5 @@
 import pandas as pd
-from scipy.stats.mstats import gmean
+import statistics
 
 ####################################################################
 # Zadání
@@ -20,7 +20,7 @@ xmr = df["pct_change"][df["Symbol"] == "XMR"].dropna()
 xmr_list = (xmr + 1).to_list()
 # print(xmr_list)
 
-xmr_mean = gmean(xmr_list) - 1
+xmr_mean = statistics.geometric_mean(xmr_list) - 1
 print(f"Průměrný mezidenní růst ceny XMR je", xmr_mean)
 
 
