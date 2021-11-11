@@ -26,3 +26,5 @@ print(f"Průměrný mezidenní růst ceny XMR je", xmr_mean)
 
 
 
+
+
