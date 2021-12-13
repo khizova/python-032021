@@ -30,7 +30,7 @@ X = tsne.fit_transform(X)
 # plt.show()
 
 # Aplikuj algoritmus KMeans s počtem shluků, který jsi odhadl/a v předchozím kroku
-model = KMeans(n_clusters=9, random_state=0)
+model = KMeans(n_clusters=10, random_state=0)
 labels = model.fit_predict(X)
 
 plt.scatter(X[:, 0], X[:, 1], c=labels, s=50, cmap="Set1")
