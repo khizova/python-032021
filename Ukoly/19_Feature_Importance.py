@@ -63,3 +63,4 @@ print(f1_score(y_test, y_pred, average="weighted"))
 
 print("Při použití jen této jedné nejdůležitější proměnné klesne hodnota f1_score z 0.928 na 0.753.")
 
+
